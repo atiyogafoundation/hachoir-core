@@ -37,9 +37,9 @@ from imp import load_source
 
 def main():
     # Check Python version!
-    if sys.hexversion < 0x2040000:
-        print "Sorry, you need Python 2.4 or greater to run (install) Hachoir!"
-        sys.exit(1)
+    #if sys.hexversion < 0x2040000:
+    #    print "Sorry, you need Python 2.4 or greater to run (install) Hachoir!"
+    #    sys.exit(1)
 
     if "--setuptools" in sys.argv:
         sys.argv.remove("--setuptools")
