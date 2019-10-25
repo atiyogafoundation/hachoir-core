@@ -170,7 +170,7 @@ def reversed(data):
             for index in xrange(len(data)-1, -1, -1):
                 reversed_data.append(data[index])
             return reversed_data
-
+"""
 # --- sorted() from Python 2.4 ---
 try:
     from __builtin__ import sorted
@@ -179,7 +179,7 @@ except ImportError:
         sorted_data = copy.copy(data)
         sorted_data.sort()
         return sorted
-import reversed
+
 __all__ = ("True", "False",
     "any", "all", "has_yield", "has_slice",
     "isinstance", "reversed", "sorted")
