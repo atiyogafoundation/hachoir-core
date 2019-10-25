@@ -178,7 +178,7 @@ except ImportError:
         sorted_data = copy.copy(data)
         sorted_data.sort()
         return sorted
-
+import reversed
 __all__ = ("True", "False",
     "any", "all", "has_yield", "has_slice",
     "isinstance", "reversed", "sorted")
