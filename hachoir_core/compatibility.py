@@ -151,12 +151,13 @@ except (TypeError, SyntaxError):
 #except ImportError:
 #    if hasYield() == "ok":
 #        code = """
-#def reversed(data):
-#    for index in xrange(len(data)-1, -1, -1):
-#        yield data[index];
-#reversed"""
-#        reversed = eval(compile(code, "<string>", "exec"))
-    if has_slice:
+def reversed(data):
+    if not isinstance(data, list):
+         data = list(data)
+    return data[::-1]
+
+        reversed = eval(compile(code, "<string>", "exec"))
+"""    if has_slice:
         def reversed(data):
             if not isinstance(data, list):
                 data = list(data)
