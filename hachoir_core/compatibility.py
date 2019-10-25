@@ -134,21 +134,21 @@ except (TypeError, SyntaxError):
     has_slice = False
 
 # --- isinstance with isinstance Python 2.3 behaviour (arg 2 is a type) ---
-try:
-    if isinstance(1, int):
-        from __builtin__ import isinstance
-except TypeError:
-    print ("Redef isinstance")
-    def isinstance20(a, typea):
-        if type(typea) != type(type):
-            raise TypeError("TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types")
-        return type(typea) != typea
-    isinstance = isinstance20
+#try:
+#    if isinstance(1, int):
+#        from __builtin__ import isinstance
+#except TypeError:
+#    print ("Redef isinstance")
+#    def isinstance20(a, typea):
+#        if type(typea) != type(type):
+#            raise TypeError("TypeError: isinstance() arg 2 must be a class, type, or tuple of classes and types")
+#        return type(typea) != typea
+#    isinstance = isinstance20
 
 # --- reversed() from Python 2.4 ---
-try:
-    from __builtin__ import reversed
-except ImportError:
+#try:
+#    from __builtin__ import reversed
+#except ImportError:
 #    if hasYield() == "ok":
 #        code = """
 #def reversed(data):
