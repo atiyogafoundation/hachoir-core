@@ -86,12 +86,12 @@ import operator
 
 # --- True and False constants from Python 2.0                ---
 # --- Warning: for Python < 2.3, they are aliases for 1 and 0 ---
-try:
-    True = True
-    False = False
-except NameError:
-    True = 1
-    False = 0
+#try:
+#    True = True
+#    False = False
+#except NameError:
+#    True = 1
+#    False = 0
 
 # --- any() from Python 2.5 ---
 try:
